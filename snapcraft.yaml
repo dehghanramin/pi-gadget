@@ -234,3 +234,16 @@ slots:
     interface: pwm
     chip-number: 0
     channel: 1
+  camera-media:
+    interface: custom-device
+    custom-device: camera-media-device
+    devices:
+      - /dev/media[0-3]
+    files:
+      read:
+        - /sys/subsystem/media/devices
+        - /sys/bus/media/devices
+        - /sys/class/media/devices
+    udev-tagging:
+      - kernel: media[0-3]
+        subsystem: media
