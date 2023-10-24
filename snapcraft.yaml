@@ -9,8 +9,7 @@ type: gadget
 base: core22
 assumes: [kernel-assets]
 architectures:
-  - build-on: [amd64, arm64]
-    build-for: [arm64]
+  - arm64
 
 package-repositories:
   - type: apt
