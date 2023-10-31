@@ -245,10 +245,14 @@ slots:
         - /sys/subsystem/media/devices
         - /sys/bus/media/devices
         - /sys/class/media/devices
+        - /sys/bus/usb/devices
+        - /sys/class/video4linux
+        - /sys/kernel/debug/sleep_time
       write:
         - /sys/subsystem/media/devices
         - /sys/bus/media/devices
         - /sys/class/media/devices
+        - /proc/sys/vm/stat_interval
     udev-tagging:
       - kernel: media[0-3]
         subsystem: media
