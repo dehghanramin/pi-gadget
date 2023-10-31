@@ -4,4 +4,6 @@ dtoverlay=vc4-fkms-v3d,cma-128
 
 # Uncomment the following to enable the Raspberry Pi camera module firmware
 start_x=1
+camera_auto_detect=0
+dtoverlay=ov5647
 gpu_mem=128

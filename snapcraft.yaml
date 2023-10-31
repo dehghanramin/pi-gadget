@@ -239,6 +239,7 @@ slots:
     devices:
       - /dev/media[0-3]
       - /dev/video[0-21]
+      - /dev/v4l-subdev*
     files:
       read:
         - /sys/subsystem/media/devices
@@ -252,4 +253,6 @@ slots:
       - kernel: media[0-3]
         subsystem: media
       - kernel: video[0-21]
-        subsystem: video4linux
+        subsystem: v4l
+      - kernel: v4l-subdev*
+        subsystem: v4l
