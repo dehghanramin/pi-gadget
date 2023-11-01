@@ -237,9 +237,9 @@ slots:
     interface: custom-device
     custom-device: camera-media-device
     devices:
-      - /dev/media[0-3]
-      - /dev/video[0-21]
-      - /dev/v4l-subdev[0-3]
+      - /dev/media[0-9]*
+      - /dev/video[0-9]*
+      - /dev/v4l-subdev0
     files:
       read:
         - /sys/subsystem/media/devices
