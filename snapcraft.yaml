@@ -239,7 +239,7 @@ slots:
     devices:
       - /dev/media[0-3]
       - /dev/video[0-21]
-      - /dev/v4l-subdev*
+      - /dev/v4l-subdev[0-3]
     files:
       read:
         - /sys/subsystem/media/devices
