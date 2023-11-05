@@ -246,10 +246,16 @@ slots:
         - /sys/bus/media/devices
         - /sys/class/media/devices
         - /sys/bus/usb/devices
+        - /run/udev/data/c505:[0-4]*
+        - /run/udev/data/c81:[0-9][0-5]*
         - /sys/class/video4linux
+        - /dev/media[0-9]*
         - /sys/kernel/debug/sleep_time
       write:
         - /sys/subsystem/media/devices
         - /sys/bus/media/devices
+        - /run/udev/data/c505:[0-4]*
+        - /run/udev/data/c81:[0-9][0-5]*
         - /sys/class/media/devices
+        - /dev/media[0-9]*
         - /proc/sys/vm/stat_interval
